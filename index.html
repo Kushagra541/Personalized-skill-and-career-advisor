@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personalized Skill & Career Advisor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+
+    <h1 class="title">Personalized Skill & Career Advisor</h1>
+
+    <!-- Form Cards -->
+    <div class="form-box">
+        <label for="field">Select Your Field:</label>
+        <select id="field">
+            <option value="">--Select Field--</option>
+            <option value="CSE">Computer Science</option>
+            <option value="Agri">Agriculture</option>
+            <option value="Business">Business</option>
+        </select>
+    </div>
+
+    <div class="form-box">
+        <label for="coursesDone">Courses You Have Done:</label>
+        <select id="coursesDone">
+            <option value="">--Select Course--</option>
+        </select>
+    </div>
+
+    <div class="form-box">
+        <label for="skills">Skills You Have:</label>
+        <input type="text" id="skills" placeholder="e.g., Python, Marketing">
+    </div>
+
+    <div class="form-box">
+        <label for="interest">What You Want to Do:</label>
+        <input type="text" id="interest" placeholder="e.g., Web Dev, Farming, Business Analytics">
+    </div>
+
+    <div class="form-box">
+        <label for="experience">Experience (in months):</label>
+        <input type="number" id="experience" placeholder="e.g., 0, 12, 24">
+    </div>
+
+    <div class="form-box">
+        <label for="additional">Additional Information:</label>
+        <textarea id="additional" placeholder="Anything else you want to tell us..."></textarea>
+    </div>
+
+    <div class="form-box center">
+        <button id="getAdviceBtn">Get Recommendation</button>
+    </div>
+
+    <!-- Output -->
+    <div class="output-box" id="output">
+        <span id="aiMessage">AI Recommendations will appear here...</span>
+    </div>
+
+    <h2 class="jobs-title">Suggested Job/Internship Roles:</h2>
+    <div id="jobCards" class="job-cards"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* Reset & Body */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: #333;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffffee;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #2a3eb1;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Form Boxes */
+.form-box {
+    background: #f0f4ff;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2a3eb1;
+    transform: scale(1.02);
+}
+
+/* Button */
+button {
+    padding: 15px 30px;
+    background: #2a3eb1;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #3c50d0;
+    transform: translateY(-3px);
+}
+
+/* Output Box */
+.output-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eef2ff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    min-height: 80px;
+    font-size: 1em;
+    line-height: 1.5em;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+/* Job Cards */
+.jobs-title {
+    margin-top: 30px;
+    color: #2a3eb1;
+    text-align: center;
+}
+
+.job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.job-card {
+    background: #d6e0ff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+    font-weight: bold;
+    color: #1a1a1a;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Center Button */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Typing effect for AI */
+.typing {
+    display: inline-block;
+    border-right: 2px solid #2a3eb1;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { border-color: #2a3eb1; }
+    25%, 75% { border-color: transparent; }
+}
